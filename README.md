@@ -1,3 +1,3 @@
 # PythonApi
 
-Estructura de API Rest, con conexion a Base de Datos MySql con ORM
+Flask structured web-api, with ORM for database
