@@ -1,12 +1,12 @@
 from sqlalchemy import Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-# Crear Sesion para conexion a DB
+# Create sessions for DB
 engine = create_engine("mysql+pymysql://root:@localhost/DB_Name")
 Base = declarative_base()
 Session = sessionmaker(engine)
 session = Session()
-# Modelo usuario
+# User model
 class c_users(Base):
     __tablename__ = "c_user"
     id = Column(Integer, primary_key=True)
